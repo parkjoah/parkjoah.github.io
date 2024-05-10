@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Boostrap Theme Simply Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        body {
+            font: 20px "Montserrat", sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .bg-1 {
+            background-color: #1abc9c;
+            /*GREEN*/
+            color: #ffffff;
+            /*앞에 나오는 컬러*/
+        }
+
+        .bg-2 {
+            background-color: #474e5d;
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #ffffff;
+            color: #555555;
+        }
+
+        .bg-4 {
+            background-color: black;
+            color: white;
+        }
+
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            /*박스 아래 공간  없앰*/
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #1abc9c ! important;
+            /*! important 를 넣어주면 강제로 실행시킬수 있음. 색깔이 많을 경우에는 안나오는 경우가 있는데, 그경우 사용*/
+        }
+
+        .margin{margin-bottom: 45px;}
+
+        
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Me</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#who">WHO</a></li>
+                    <li><a href="#what">WHAT</a></li>
+                    <li><a href="#where">WHERE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-1 text-center" id="who">
+        <h3>Who Am I?</h3>
+        <img src="bird.jpg" class="img-responsive img-circle" alt="Bird" style="display:inline">
+        <h3>I'm an adventurer</h3>
+    </div>
+    <div class="container-fluid bg-2 text-center" id="what">
+        <h3>What Am I?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum pulvinar mattis. Donec in velit
+            vestibulum, pretium urna non, tempor turpis. Sed vulputate lacus in erat ultrices, at mollis libero
+            tincidunt. Nullam interdum elit vel massa imperdiet, a viverra lorem mattis. Phasellus tincidunt, leo eget
+            feugiat tempor, dui sem accumsan magna, eu eleifend nulla sapien at nibh. Nulla faucibus velit ut porttitor
+            tincidunt. Aenean id mauris sit amet tortor tempus pellentesque. Curabitur non mollis nisl. Cras nec lectus
+            suscipit, fermentum risus ut, venenatis mauris. Mauris condimentum elit vel arcu ornare molestie. Aenean non
+            tincidunt ipsum. Phasellus fringilla venenatis urna, a pretium ligula scelerisque in. Vivamus purus eros,
+            pharetra eu enim et, fermentum faucibus nulla.</p>
+        <a href="#" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-search"></span>Search</a>
+    </div>
+    <div class="container-fluid bg-3 text-center" id="where">
+        <h3>Where To Find Me?</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="bird1.jpg" alt="Image" style="width:100%" class="img-responsive">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="bird2.jpg" alt="Image" style="width:100%" class="img-responsive">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="bird3.jpg" alt="Image" style="width:100%" class="img-responsive">
+            </div>
+        </div>
+        <footer class="container-fluid bg-4 text-center">
+            <p> Boostrap Made By Jo-Ah Park <br>
+                <a href="http://seoultech.ac.kr">
+                    Seoul National University of Science and Technology
+
+                </a>
+            </p>
+        </footer>
+</body>
+
+
+</html>
